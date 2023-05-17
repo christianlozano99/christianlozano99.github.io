@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>Christian Lozano</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header">
+		<a href="index.html" class="title">Christian Lozano</a>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="AWSProject.html" class="active">AWS Project</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<section id="main" class="wrapper">
+			<div class="inner">
+				<h1 class="major">AWS Project</h1>
+				<h3>Problem Statement</h3>
+				<p>
+
+					Customers were lacking a way to access near real-time data, resulting in delays of approximately 2-4
+					hours. As part of the project, our objective was to enable near real-time processing and
+					transformation of case data, making it consumable by customers within a 15-30 minute timeframe
+					(reducing the previous delay). An illustrative use case example involved the WFM (Work Force
+					Management) and OPS (Operations) teams, who continuously monitored the AWS case queue backlog,
+					analyzed trends, and provided recommendations to address specific cases. They also tracked volume
+					drivers for the day and utilized real-time updates to plan and adjust workloads. Existing manual
+					processes and unauthorized methods, such as scraping the case console, caused delays in
+					decision-making and potentially impacted AWS support customers.
+				</p>
+
+				<h3>Scope</h3>
+				<p>
+					The project's scope was to reduce the data freshness Service Level Agreement (SLA) to an impressive
+					15 minutes for end customers, with a specific focus on the WFM team as an example use case. The
+					project involved designing a robust pipeline that effectively reduced the time required for data
+					ingestion and transformation, ensuring compliance with the 15-minute data freshness SLA. Moreover,
+					the solution was designed to be generic, enabling seamless onboarding of other data sources within a
+					single day. A scalable architecture was implemented to facilitate future self-service capabilities,
+					complemented by a user-friendly interface (UI) to enhance usability and accessibility.
+				</p>
+
+				<h3>High Level Design</h3>
+				<img src="images/aws.png" />
+				<p>
+					While the previous description provides a high-level overview, it is important to note that detailed
+					low-level designs were undertaken to ensure the solution's adaptability across multiple
+					applications. The goal was to generalize the solution, making it scalable and applicable to any
+					number of applications. These meticulous low-level design efforts allowed for flexibility and
+					robustness, accommodating diverse use cases and maximizing the solution's effectiveness across
+					various scenarios.</p>
+
+				<h3>End Result</h3>
+				<p>
+					<li>
+						I successfully implemented enhancements to the ETL solution, resulting in a remarkable
+						improvement in data availability. The ingestion process, which previously took 3-4 hours, has
+						been optimized to deliver data within a matter of seconds. This substantial reduction in
+						processing time enables swift and precise data processing, leading to improved operational
+						efficiency and faster insights.</li>
+					<li>
+						I have gained a diverse set of valuable skills encompassing ETL development, Apache Spark with
+						AWS Glue (Python), data warehousing, Typescript for cloud infrastructure, code review standards,
+						Agile methodologies, and code documentation. These proficiencies equip me with a comprehensive
+						toolkit to tackle complex data processing and infrastructure challenges while adhering to
+						industry best practices and ensuring efficient collaboration within teams.</li>
+					<li>I went above and beyond the assigned scope by developing schedule-based data crawlers
+						specifically designed to update tables in Athena. Additionally, I implemented automated AWS
+						alerts to monitor these changes, as well as to provide notifications in response to data influx
+						and potential issues.</li>
+				</p>
+			</div>
+		</section>
+
+	</div>
+
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
